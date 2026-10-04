@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data & Technical Projects</title>
+</head>
+<style>
+    body {background-color: #0f172a;font-family: Arial, sans-serif;max-width: 1400px;margin: auto;padding: 20px;color: #e2e8f0;}
+    h1 {text-align: center; color: #38bdf8; font-size: 2.5rem;}
+    h2 {color: #38bdf8; border-bottom: 2px solid #334155; padding-bottom: 10px;}
+    body > p {text-align: center;margin-bottom: 40px; color: #cbd5e1;}
+    .project-layout {display: flex; gap: 30px; align-items: flex-start;}
+    .project-info { flex: 1;}
+    .project-content {flex: 1; margin-top: 20px;}
+    .reverse {flex-direction: row-reverse;}
+    .project-count {text-align: center; color: #38bdf8; font-weight: bold; letter-spacing: 1px;}
+    .project-left, .project-right {background: #1e293b; padding: 25px; margin: 40px auto; border-radius: 12px; border-left: 6px solid #38bdf8; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: 0.3s;}
+    .project-left {border-left: 6px solid #38bdf8;}
+    .project-right {border-right: 6px solid #38bdf8; border-left: none;}
+    .project-toggle {background: #2563eb; color: white; border: none; padding: 12px 16px; border-radius: 8px; cursor: pointer; font-weight: bold; margin-right: 10px;}
+    .project-toggle:hover {background: #1d4ed8;}
+    .project-image {width: 100%; max-width: 900px; display: block; margin: 20px auto; border-radius: 10px; border: 3px solid #38bdf8; box-shadow: 0 4px 15px rgba(56,189,248,0.2); transition: 0.3s;}
+    .project-image:hover {transform: scale(1.03);}
+    .project-left::before, .project-right::before {content: "DATA PROJECT"; display: block; color: #38bdf8; font-size: 0.7rem; letter-spacing: 2px; margin-bottom: 10px;}
+    .skills-tags {margin: 15px 0;}
+    .skills-tags strong { display: block; margin-bottom: 10px; color: #e2e8f0;}
+    .skills-tags span {display: inline-block;background: #082f49;border: 1px solid #38bdf8;color: #7dd3fc;padding: 8px 12px;margin: 4px;border-radius: 20px;font-size: 0.9rem;font-weight: bold;}
+    .repo-btn {background: #0891b2; color: white; padding: 12px 16px; text-decoration: none; border-radius: 8px; display: inline-block; margin-top: 15px;}
+    .repo-btn:hover {background: #0e7490;}
+    .floating-home {position: fixed; top: 20px; right: 20px; background: #0891b2; color: white; text-decoration: none; padding: 12px 18px; border-radius: 8px; font-weight: bold; z-index: 1000;}
+    .hidden {display: none;}
+    footer { margin-top: 40px; padding: 20px; text-align: center; border-top: 3px solid #fcc419; color: #d1d1d1; background: #252529;border-radius: 10px;}
+    .footer-links { margin-top: 10px;}
+    .footer-links a {color: #a61e4d; text-decoration: none; margin: 0 10px;font-weight: bold;}
+    .footer-links a:hover { color: #d6336c;}
+    @media (max-width: 900px) {.project-layout,.reverse {flex-direction: column;}}
+</style>
+<body>
+        <h1>Data & Technical Projects</h1>
+        <p class="project-count">3 Portfolio Projects • SQL • Python • Power BI</p>
+        <p>A collection of projects demonstrating data analysis, SQL, Python, Power BI and reporting skills.</p>
+        <a href="index.html" class="floating-home">← Back to Portfolio</a>
+    <section class="project-left">
+        <div class="project-layout">
+            <div class="project-info">
+                <h2>USDA Cold Storage Dashboard</h2>
+                <p><strong>Project Goal:</strong>To practise the fundamentals of data cleaning using Excel and gain experience gathering, handling andworking with real-world data.</p>
+                <p>A complete data analysis workflow using USDA Cold Storage data. The project demonstrates data cleaning, SQL analysis, pivot table development and dashboard visualisation.</p>
+                <div class="skills-tags">
+                    <strong>Skills Used:</strong>
+                    <span>Python</span>
+                    <span>Power BI</span>
+                    <span>SQL</span>
+                    <span>Reporting</span>
+                </div>
+                <button class="project-toggle">📊 View Dashboard Screenshot</button>
+                <a href="https://github.com/ThomasSutcliffe/usda-cold-storage-dashboard" target="_blank" class="repo-btn">View Repository</a>
+            </div>
+            <div class="project-content hidden">
+                <img class="project-image" src="IMG/usda-cold-storage-dashboard.png" alt="USDA Cold Storage Dashboard screenshot"/>
+            </div>
+        </div>
+    </section>
+    <section class="project-right">
+        <div class="project-layout reverse">
+            <div class="project-info">
+                <h2>SQL Database Project</h2>
+                <p><strong>Project Goal:</strong>To practise more advanced SQL concepts, understand common challenges when working with databases, and use SQL to gather insights and develop a better understanding of database design and analysis.</p>
+                <p>Portfolio project demonstrating database creation, synthetic dataset generation, data validation and SQL analysis using SQLite.</p>
+                <div class="skills-tags">
+                    <strong>Skills Used:</strong>
+                    <span>SQL</span>
+                    <span>SQLite</span>
+                    <span>Database Design</span>
+                    <span>Data Validation</span>
+                    <span>Data Analysis</span>
+                </div>
+                <button class="project-toggle">🗄 View Database Screenshot</button>
+                <a href="https://github.com/ThomasSutcliffe/sql-database-project" target="_blank" class="repo-btn"> View Repository</a>
+            </div>
+            <div class="project-content hidden">
+                <img class="project-image" src="IMG/sql-database-project.png" alt="SQL dashboard project"/>
+            </div>
+        </div>
+    </section>
+    <section class="project-left">
+        <div class="project-layout">
+            <div class="project-info">
+                <h2>Supermarket Dashboard Project</h2>
+                <p><strong>Project Goal:</strong>To gain experience working with a different dashboard design, using generated test data to practise cleaning, organising and analysing information before presenting insights through visualisation.</p>
+                <p>Python and Power BI project involving data cleaning,transformation and dashboard development.</p>
+                <div class="skills-tags">
+                    <strong>Skills Used:</strong>
+                    <span>Python</span>
+                    <span>Power BI</span>
+                    <span>Data Analysis</span>
+                    <span>Dashboard Design</span>
+                </div>
+                <button class="project-toggle">📈 View Dashboard Screenshot</button>
+                <a href="https://github.com/ThomasSutcliffe/supermarket-dashboard-Project" target="_blank" class="repo-btn"> View Repository</a>
+            </div>
+            <div class="project-content hidden">
+                <img class="project-image" src="IMG/supermarket-dashboard-project.png" alt="Supermarket dashboard project"/>
+            </div>   
+        </div>
+    </section>
+
+    <script>
+        document
+        .querySelectorAll(".project-toggle")
+        .forEach(button => {
+
+            button.addEventListener("click", () => {
+
+                const content =
+                button.closest(".project-layout")
+                .querySelector(".project-content");
+
+                content.classList.toggle("hidden");
+
+                if(content.classList.contains("hidden")) {
+
+                    if(button.textContent.includes("Hide")) {
+
+                        button.textContent =
+                        button.textContent.replace("Hide","View");
+
+                    }
+                } else {
+                    if(button.textContent.includes("View")) {
+
+                        button.textContent =
+                        button.textContent.replace("View","Hide");
+
+                    }
+                }
+            
+            });
+        });
+        document
+        .querySelectorAll(".project-image")
+        .forEach(img => {
+
+            img.addEventListener("click", () => {
+                window.open(img.src, "_blank");
+           
+            });
+        });
+    </script>
+    <footer>
+            <p>
+                © 2026 Thomas Sutcliffe |
+                Aspiring Data Technician & Data Analyst
+            </p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="Data&TechnicalProjects.html">Data>Projects</a>
+                <a href="IT_Guides.html">IT Guides</a>
+            </div>
+            <p id="copyright"></p>
+        </footer>
+</body>
+</html>

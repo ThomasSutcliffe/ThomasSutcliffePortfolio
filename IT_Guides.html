@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Guides</title>
+</head>
+<style>
+    body {background-color:#f4f6f8; font-family: Arial, sans-serif;max-width: 1400px; margin: auto; padding: 20px; color: #333;}
+    body > p {text-align: center; max-width: 900px; margin: 0 auto 30px auto;}
+    h1 {text-align: center; color: #0a3d62; margin-bottom: 10px;}
+    section {background: white;max-width: 1200px;margin: 30px auto;padding: 25px;border-left: 8px solid #0a3d62;border-top: 2px solid #74b9ff;border-radius: 10px;box-shadow: 0 4px 10px rgba(0,0,0,0.12);transition: 0.2s;}
+    section:hover {transform: translateY(-2px);box-shadow: 0 6px 15px rgba(0,0,0,0.15);}
+    .section-toggle {width: 100%;text-align: left;background: #eef6ff;color: #0a3d62;border: none;border-left: 5px solid #0a3d62;border-radius: 5px;padding: 15px;font-size: 1.1rem;font-weight: bold;cursor: pointer;}
+    .section-toggle:hover {background: #dceeff;}
+    .section-content {margin-top: 15px;}
+    img {width: 100%;max-width: 850px;display: block;margin: 20px auto;border: 3px solid #0a3d62;border-radius: 10px;box-shadow: 0 4px 12px rgba(0,0,0,0.15);}
+    ul {padding-left: 25px;}
+    li {margin-bottom: 8px;}
+    a {display: inline-block;margin-top: 20px;padding: 10px 15px;background-color: #0a3d62;color: white;text-decoration: none;border-radius: 5px;}
+    a:hover {background-color: #0984e3;}
+    /*Porfolio button*/
+    .floating-home {position: fixed;top: 20px;right: 20px; background: #0a3d62;color: white; text-decoration: none; padding: 12px 18px; border-radius: 8px; font-weight: bold; z-index: 1000; box-shadow: 0 3px 6px rgba(0,0,0,0.2);}
+    .floating-home:hover {background: #0984e3;}
+    /*Skills Box*/
+    .skills-panel {position: fixed;right: 20px;top: 100px;width: 250px; border-left: 5px solid #74b9ff}
+    #skillsBtn {width: 100%;padding: 12px;background: #0a3d62;color: white;border: none;border-radius: 8px;cursor: pointer;} 
+    #skillsList {background: #ffffff;border: 3px solid #0a3d62;border-left: 8px solid #74b9ff;border-radius: 10px;padding: 15px;margin-top: 10px;box-shadow: 0 6px 14px rgba(0,0,0,0.15);}
+    #skillsBtn:hover {background: #0984e3;}
+    .hidden {display: none;}
+    .tools-toggle {position: fixed;right: 20px;bottom: 20px;background: #0a3d62;color: white;border: none;padding: 12px 16px;border-radius: 8px;cursor: pointer;z-index: 1001;}
+    .guide-image {cursor: pointer; transition: 0.3s ease;}
+    .guide-image:hover {transform: scale(1.02); box-shadow: 0 8px 20px rgba(0,0,0,0.25);}
+    footer { margin-top: 40px; padding: 20px; text-align: center; border-top: 3px solid #fcc419; color: #d1d1d1; background: #252529;border-radius: 10px;}
+    .footer-links { margin-top: 10px;}
+    .footer-links a {color: #a61e4d; text-decoration: none; margin: 0 10px;font-weight: bold;}
+    .footer-links a:hover { color: #d6336c;}
+</style>
+<body>
+    <button id="toolsToggle" class="tools-toggle">🖥 Clear Overlay</button>
+        <script>
+            const toggleBtn =
+            document.getElementById("toolsToggle");
+
+            toggleBtn.addEventListener("click", () => {
+                    
+                    document
+                    .querySelector(".skills-panel")
+                    .classList
+                    .toggle("hidden");
+
+                    document
+                    .querySelector(".floating-home")
+                    .classList
+                    .toggle("hidden");
+
+                    if(toggleBtn.textContent === "☰ Clear Overlay") {
+                        toggleBtn.textContent = "☰ Show Overlay";
+                    }else {
+                        toggleBtn.textContent = "☰ Clear Overlay";
+                    }
+
+            });
+        </script>
+    <h1>IT Support Guides</h1>
+    <p>A collection of troubleshooting notes, technical documentation, and support guides developed through independent study and practical research.</p>
+    <a href="index.html" class="floating-home">← Back to Portfolio</a>
+    <section>
+        <button class="section-toggle">▶ Performance & Startup Troubleshooting</button>
+        <div class="section-content hidden">
+        <p>Troubleshooting flowcharts and solutions.</p>
+        <img class="guide-image" src="IMG/it-support-page-1.jpeg" alt="Performance & Startup Troubleshooting"/>
+        </div>
+    </section>
+    <section>
+        <button class="section-toggle">▶ Malware & Windows Update Diagnostics</button>
+        <div class="section-content hidden">
+        <p>Diagnostic procedures for malware identification, removal techniques and Windows Update troubleshooting.</p>
+        <img class="guide-image" src="IMG/it-support-page-2.jpeg" alt="Malware & Windows Update Diagnostics pages"/>
+        </div>
+    </section>
+    <section>
+        <button class="section-toggle">▶ Network & Software Application Issues</button>
+        <div class="section-content hidden">
+        <p>Flowcharts covering software crashes, network connectivity issues and troubleshooting procedures.</p>
+        <img class="guide-image" src="IMG/it-support-page-3.jpeg" alt="Network & Software Application Issues pages"/>
+        </div>
+    </section>
+    <section>
+        <button class="section-toggle">▶ Printer & Advanced Diagnostic Tools</button>
+        <div class="section-content hidden">
+        <p>Troubleshooting guides covering printer issues, common issies and root cause analysis and Windows diagnostic tools.</p>
+        <img class="guide-image" src="IMG/it-support-page-4.jpeg" alt="Printer & Advanced Diagnostic pages"/>
+        </div>
+    </section>
+    <section>
+        <button class="section-toggle">▶ System Monitoring & Performance Analysis</button>
+        <div class="section-content hidden">
+        <p>Advanced troubleshooting guide covering system monitoring, performance analysis and diagnostic tools.</p>
+        <img class="guide-image" src="IMG/it-support-page-5.jpeg" alt="System Monitoring & Performance Analysis pages"/>
+        </div>
+    </section>
+    <div class="skills-panel">
+            <button id="skillsBtn">Skills Demonstrated</button>
+                <div id="skillsList" class="hidden">
+                    <ul>
+                        <li>Problem Solving</li>
+                        <li>Root Cause Analysis</li>
+                        <li>Technical Documentation</li>
+                        <li>Windows Troubleshooting</li>
+                        <li>Network Diagnostics</li>
+                        <li>System Performance Analysis</li>
+                        <li>Fault Diagnosis</li>
+                        <li>Analytical Thinking</li>
+                    </ul>
+                </div>
+    </div>
+            <script>
+                document.getElementById("skillsBtn")
+                .addEventListener("click", () => {
+                        document
+                        .getElementById("skillsList")
+                        .classList
+                        .toggle("hidden");
+
+                });
+                
+                document.querySelectorAll(".guide-image")
+                .forEach(img => {
+
+                    img.addEventListener("click", () => {
+
+                        window.open(img.src, "_blank");
+                    
+                    });
+                });
+                document
+                .querySelectorAll(".section-toggle")
+                .forEach(button => {
+                    button.addEventListener("click", () => {
+                        const content =
+                        button.nextElementSibling;
+
+                        content.classList.toggle("hidden");
+                    });
+                });
+            </script>
+    <footer>
+            <p>
+                © 2026 Thomas Sutcliffe |
+                Aspiring Data Technician & Data Analyst
+            </p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="Data&TechnicalProjects.html">Data>Projects</a>
+                <a href="IT_Guides.html">IT Guides</a>
+            </div>
+            <p id="copyright"></p>
+        </footer>
+</body>
+</html>
